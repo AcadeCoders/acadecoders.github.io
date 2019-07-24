@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <img id="myImg"
+         src="chun.png"
+         width ='100'
+         height='100'/>
+      <button id='buttonId' onclick='change_image()'> click me</button>
+   </body>
+   <script>
+      function change_image() {
+
+    //here "this" will point to button, the element which is clicked ie event occurred.
+
+    //but we need image, so get it by using below statement
+    var img = document.getElementById("myImg");
+    img.width = 1500;
+    img.height = 1500;
+   }
+   </script>
+</html>
